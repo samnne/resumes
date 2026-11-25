@@ -1,0 +1,152 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez (Modified for Samuel Echefu)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\setlength{\footskip}{4pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for a fuller look
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.55in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - slightly more padding
+\titleformat{\section}{
+  \vspace{0pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabularx}{0.97\textwidth}{@{}Xr@{}}
+      \small#1 & #2 \\
+    \end{tabularx}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\bullet$, itemsep=1.80pt, topsep=2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Samuel Echefu} \\ \vspace{3pt}
+    \small Research Software Developer $|$ Computer Vision \\ \vspace{3pt}
+    \small 587-500-7408 $|$ \href{mailto:samuel.n.echefu@gmail.com}{samuel.n.echefu@gmail.com} $|$ 
+    \href{https://linkedin.com/in/samuel-echefu-251a21336}{linkedin.com/in/samuel-echefu} $|$
+    \href{https://github.com/samnne}{github.com/samnne} $|$
+    \href{https://samechefu.com}{samechefu.com}
+\end{center}
+
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{University of Victoria (UVIC)}{Sep 2024 -- Apr 2028}{Bachelor of Science in Computer Science (3rd year)}{}
+\resumeItemListStart
+  \resumeItem{Relevant Coursework: Intro to Artificial Intelligence, Probability and Statistics, Calculus I-IV, Data Structures and Algorithms}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeItemListStart
+  \resumeItem{\textbf{Languages}: \textbf{Python}, \textbf{C/C++}, \textbf{Java}, \textbf{SQL}}
+  \resumeItem{\textbf{Research \& Data}: \textbf{Pandas}, \textbf{Matplotlib}, \textbf{Jupyter Notebook}, \textbf{Google Colab}, \textbf{OpenCV}, \textbf{MediaPipe}}
+  \resumeItem{\textbf{Systems \& Tools}: \textbf{Linux}, \textbf{pthreads}, \textbf{\textbf{Git}/\textbf{GitHub}}, \textbf{Locust}, \textbf{Google Cloud Platform}}
+\resumeItemListEnd
+
+\section{Work Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Software Engineer}{Sep 2026 -- Present}{UVic Satellite Design}{Victoria, BC}
+\resumeItemListStart
+  \resumeItem{Soldered hardware components using a \textbf{Raspberry Pi} to relay \textbf{SPI} telemetry and video packets to a host PC}
+  \resumeItem{Built a high-speed \textbf{SPI} video pipeline between an \textbf{nRF5340}, a \textbf{Raspberry Pi}, and an output laptop using \textbf{FreeRTOS}, \textbf{Python}, and C functions to chunk frames and stream in real time}
+\resumeItemListEnd
+\resumeSubheading{Software Developer}{May 2026 -- Jul 2026}{Aeternum Corp}{Edmonton, AB}
+\resumeItemListStart
+  \resumeItem{Shipped an end-to-end permission-first RAG prototype with \textbf{FastAPI} and \textbf{TypeScript} ahead of the project deadline, with a \textit{90\%} confidence threshold to keep responses relevant and user data protected}
+  \resumeItem{Joined daily standups, managed work tickets, and scheduled work sessions with teammates to keep delivery on track}
+  \resumeItem{Created a dashboard \textbf{API} that batched metric requests, reduced network overhead, and cut latency by \textit{70\%}}
+  \resumeItem{Designed and ported a \textbf{Figma} prototype to a \textbf{\textbf{React} Native} mobile app to display data and responses}
+\resumeItemListEnd
+\resumeSubheading{Frontend Developer}{May 2025 -- Sep 2025}{ProperSeer}{Calgary, AB}
+\resumeItemListStart
+  \resumeItem{Created responsive user interfaces using \textbf{React}, \textbf{Redux}, and \textbf{Bootstrap}, enhancing cross-device usability and caching expensive operations through memoization and prefetching, improving overall page load time by \textit{20\%}}
+  \resumeItem{Developed dashboard views using \textbf{React} and \textbf{Redux}, streamlining property management workflows}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Selected Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\href{https://github.com/samnne/vst-fingers}{\textbf{VST Fingers}} $|$ \emph{OpenCV, Python, Max9, MediaPipe}}{}
+\resumeItemListStart
+  \resumeItem{Built a VST computer vision controller using \textbf{Python}, \textbf{OpenCV} and \textbf{MediaPipe}, and OSC messaging, enabling finger detection to control VSTs inside \textbf{Max9} in 50ms}
+  \resumeItem{Co-authored a research paper on a computer vision music system that maps real-time finger detection to VSTs}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/chaining_or_linear_probing}{\textbf{Hash Table Experimental Analysis}} $|$ \emph{C, Java, Python}}{}
+\resumeItemListStart
+  \resumeItem{Implemented custom hash tables in \textbf{Java}, C, and \textbf{Python} to benchmark performance differences between Chaining and Linear Probing collision schemes}
+  \resumeItem{Analyzed language architecture, standardized testing using a Jenkins Hash implementation, and evaluated algorithm efficiency amongst large table sizes}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/onc-bloom}{\textbf{OceanBloom}} $|$ \emph{Python, Pandas, Matplotlib, Jupyter Notebook, Google Colab}}{}
+\resumeItemListStart
+  \resumeItem{Explored Ocean Networks Canada's \textbf{API} through a structured learning plan in \textbf{Google Colab}; used \textbf{Python}, \textbf{Pandas}, \textbf{Matplotlib}, and \textbf{Jupyter Notebook} for data visualization.}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/u-eyes}{\textbf{uEyes}} $|$ \emph{React, TypeScript, FastAPI, Firebase, Google Cloud Platform, Docker}}{}
+\resumeItemListStart
+  \resumeItem{Designed a computer vision application for \textbf{Google AI Studio}'s hackathon which utilizes the \textbf{Gemini \textbf{API}} to describe a user's environment with audio in 500ms by maintaining short context windows for faster responses}
+  \resumeItem{Developed using \textbf{WebSockets} for a real-time connection, \textbf{FastAPI}, \textbf{Firebase}, \textbf{Python}, \textbf{React}, and \textbf{Tailwind}}
+  \resumeItem{Containerized the backend with \textbf{Docker} and deployed to \textbf{\textbf{Google Cloud Platform} (\textbf{GCP})} for scalable hosting}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\end{document}

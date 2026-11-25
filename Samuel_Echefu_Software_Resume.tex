@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez (Modified for Samuel Echefu)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for a fuller look
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.55in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - slightly more padding
+\titleformat{\section}{
+  \vspace{0pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabularx}{0.97\textwidth}{@{}Xr@{}}
+      \small#1 & #2 \\
+    \end{tabularx}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\bullet$, itemsep=0pt, topsep=2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Samuel Echefu} \\ \vspace{5pt}
+    \small 587-500-7408 $|$ \href{mailto:samuel.n.echefu@gmail.com}{samuel.n.echefu@gmail.com} $|$ 
+    \href{https://linkedin.com/in/samuel-echefu-251a21336}{linkedin.com/in/samuel-echefu} $|$
+    \href{https://github.com/samnne}{github.com/samnne} $|$
+    \href{https://samechefu.com}{samechefu.com}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Victoria (UVIC)}{Sep 2024 -- Apr 2028}
+    {Bachelor of Science in Computer Science (3rd year)}{}
+\resumeItemListStart
+  \resumeItem{Relevant Coursework: Data Structures and Algorithms, Operating Systems, Software Systems Development, Intro to Artificial Intelligence, Probability and Statistics, Calculus I-IV, Software Development Methods}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Software Developer}{May 2026 -- Jul 2026}{Aeternum Corp}{Edmonton, AB}
+\resumeItemListStart
+  \resumeItem{Shipped an end-to-end permission-first RAG prototype with \textbf{FastAPI} and \textbf{TypeScript} ahead of the project deadline, with a \textit{90\%} confidence threshold to keep responses relevant and user data protected}
+  \resumeItem{Joined daily standups, managed work tickets, and scheduled work sessions with teammates to keep delivery on track}
+  \resumeItem{Created a dashboard \textbf{API} that batched metric requests, reduced network overhead, and cut latency by \textit{70\%}}
+  \resumeItem{Designed and ported a \textbf{Figma} prototype to a \textbf{\textbf{React} Native} mobile app to display data and responses}
+\resumeItemListEnd
+\resumeSubheading{Software Engineer}{Sep 2026 -- Present}{UVic Satellite Design}{Victoria, BC}
+\resumeItemListStart
+  \resumeItem{Soldered hardware components using a \textbf{Raspberry Pi} to relay \textbf{SPI} telemetry and video packets to a host PC}
+  \resumeItem{Built a high-speed \textbf{SPI} video pipeline between an \textbf{nRF5340}, a \textbf{Raspberry Pi}, and an output laptop using \textbf{FreeRTOS}, \textbf{Python}, and C functions to chunk frames and stream in real time}
+\resumeItemListEnd
+\resumeSubheading{Frontend Developer}{May 2025 -- Sep 2025}{ProperSeer}{Calgary, AB}
+\resumeItemListStart
+  \resumeItem{Created responsive user interfaces using \textbf{React}, \textbf{Redux}, and \textbf{Bootstrap}, enhancing cross-device usability and caching expensive operations through memoization and prefetching, improving overall page load time by \textit{20\%}}
+  \resumeItem{Developed dashboard views using \textbf{React} and \textbf{Redux}, streamlining property management workflows}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\href{https://github.com/samnne/marketquad}{\textbf{MarketQuad}} $|$ \emph{Next.js, Supabase, TypeScript, Cloudinary}}{}
+\resumeItemListStart
+  \resumeItem{Launched a marketplace serving 20+ UVic students to buy \& sell local items (market-quad.com)}
+  \resumeItem{Load-tested with \textbf{Locust}, holding p95 $<$ 500 ms at \textit{1500+ req/s} on a \textbf{Next.js} \textbf{API}}
+  \resumeItem{Developed secure authentication with \textbf{Supabase} and \textbf{Postgres RLS}, restricting access to ``@uvic.ca'' emails}
+  \resumeItem{Optimized image operations by utilizing \textbf{Cloudinary} CDN and prefetching to decrease listing load times by \textit{10\%}}
+  \resumeItem{Implemented a real-time messaging system using \textbf{Socket.io} for constant communication across devices}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/morph-ai}{\textbf{Morph}} $|$ \emph{Python, Textual, asyncio, MCP, OpenAI API}}{}
+\resumeItemListStart
+  \resumeItem{Built a terminal-based AI agent harness in \textbf{Python} with a \textbf{Textual} \textbf{TUI}, running agent requests and an agentic tool-calling loop over the \textbf{OpenAI Responses \textbf{API}}, formatting Markdown responses in a conversation view}
+  \resumeItem{Integrated \textbf{Model Context Protocol (\textbf{MCP})} servers over stdio, discovering external tools at startup and routing model tool calls alongside 5 local filesystem and command tools (8 tools total)}
+  \resumeItem{Added guardrails to command execution, including an executable allowlist, path-traversal rejection, 30-second timeouts, and output truncation to protect against prompt injection or malicious tool calls}
+  \resumeItem{Added persistent user memory loaded into the system prompt and runtime workspace switching through \textbf{TUI} tools}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/utransit}{\textbf{uTransit}} $|$ \emph{Go, React Native, React, Data Handling, Protobuf, REST API}}{}
+\resumeItemListStart
+  \resumeItem{Engineered a real-time data parser service in \textbf{Go} that consumes and fetches \textbf{BC Transit's GTFS Realtime} feed, decoding \textbf{Protobuf} messages into live vehicle positions and trip updates displayed in uTransit}
+  \resumeItem{Load-Tested with \textbf{Locust}, holding a p99 $<$ 320 ms with 1000 simulated users over 5 minutes}
+  \resumeItem{Reduced \textbf{API} latency from 650 ms to 45 ms by implementing an in-memory cache and indexing expensive calls}
+  \resumeItem{Designed and developed a mobile-first frontend in \textbf{\textbf{React} Native}, batching and memoizing network calls, improving round-trip response time by \textit{25\%}}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/benny}{\textbf{Benny}} $|$ \emph{TypeScript, Expo, Java, Springboot, Google Cloud Platform}}{}
+\resumeItemListStart
+  \resumeItem{Automated expense tracking by building a receipt-parsing backend in \textbf{Spring Boot}, integrating the \textbf{Gemini \textbf{API}} to extract line items, structure, and classify expense types and common spending trends into \textbf{Firestore}}
+  \resumeItem{Built a \textbf{\textbf{React} Native} mobile application paired with an automated data pipeline in \textbf{TypeScript} to visualize expense metrics with \textbf{Tailwind} and use weighted averages to predict grocery totals before upcoming shopping trips}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{Multi-Threaded Job Scheduler} $|$ \emph{C, pthreads, Linux, Make, Python}}{}
+\resumeItemListStart
+  \resumeItem{Built a multi-threaded scheduler in C with \textbf{pthreads} that simulates up to 256 concurrent threads, applying core OS concepts such as priority scheduling and mutual exclusion.}
+  \resumeItem{Designed a dispatcher with four FIFO queues (east/west, high/low priority), tie-breaking rules, and starvation prevention, so high-priority jobs go first without blocking the opposite direction.}
+  \resumeItem{Benchmarked with \textbf{Python} to compare expected output to ensure the scheduler rules are enforced.}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/u-eyes}{\textbf{uEyes}} $|$ \emph{React, TypeScript, FastAPI, Firebase, Google Cloud Platform, Docker}}{}
+\resumeItemListStart
+  \resumeItem{Designed a computer vision application for \textbf{Google AI Studio}'s hackathon which utilizes the \textbf{Gemini \textbf{API}} to describe a user's environment with audio in 500ms by maintaining short context windows for faster responses}
+  \resumeItem{Developed using \textbf{WebSockets} for a real-time connection, \textbf{FastAPI}, \textbf{Firebase}, \textbf{Python}, \textbf{React}, and \textbf{Tailwind}}
+  \resumeItem{Containerized the backend with \textbf{Docker} and deployed to \textbf{\textbf{Google Cloud Platform} (\textbf{GCP})} for scalable hosting}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/ssi}{\textbf{Simple Shell Interpreter - Operating Systems Course}} $|$ \emph{C}}{}
+\resumeItemListStart
+  \resumeItem{Built a shell interpreter in C that executes built-in commands and any program on the user's PATH, including support for background tasks, using system calls for process creation}
+  \resumeItem{Implemented persistent command history stored across sessions, plus git support}
+  \resumeItem{Developed custom data structures to handle background processes and store user commands for efficiency}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/vst-fingers}{\textbf{VST Fingers}} $|$ \emph{OpenCV, Python, Max9, MediaPipe}}{}
+\resumeItemListStart
+  \resumeItem{Built a VST computer vision controller using \textbf{Python}, \textbf{OpenCV} and \textbf{MediaPipe}, and OSC messaging, enabling finger detection to control VSTs inside \textbf{Max9} in 50ms}
+  \resumeItem{Co-authored a research paper on a computer vision music system that maps real-time finger detection to VSTs}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{Alert Me} $|$ \emph{C++, OpenCV, YOLO, Python, ESP32}}{}
+\resumeItemListStart
+  \resumeItem{Built a smart camera with an \textbf{ESP32} microcontroller and \textbf{OpenCV} to capture live video for object detection}
+  \resumeItem{Integrated \textbf{YOLO} image recognition and other libraries to detect and alert when people enter the view}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/chaining_or_linear_probing}{\textbf{Hash Table Experimental Analysis}} $|$ \emph{C, Java, Python}}{}
+\resumeItemListStart
+  \resumeItem{Implemented custom hash tables in \textbf{Java}, C, and \textbf{Python} to benchmark performance differences between Chaining and Linear Probing collision schemes}
+  \resumeItem{Analyzed language architecture, standardized testing using a Jenkins Hash implementation, and evaluated algorithm efficiency amongst large table sizes}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/onc-bloom}{\textbf{OceanBloom}} $|$ \emph{Python, Pandas, Matplotlib, Jupyter Notebook, Google Colab}}{}
+\resumeItemListStart
+  \resumeItem{Designed a comprehensive learning plan to understand Ocean Network Canada's \textbf{API} with \textbf{Google Colab}}
+  \resumeItem{Built with \textbf{Python}, \textbf{Pandas}, \textbf{Jupyter Notebook}, and \textbf{Matplotlib} for data visualization.}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/survey_parser}{\textbf{Survey Parser}} $|$ \emph{C, Bash}}{}
+\resumeItemListStart
+  \resumeItem{Built a file parser to process and format survey data properly, which is calculated via Likert scaling}
+  \resumeItem{Created using C, ensuring proper memory management, string, and file processing}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\resumeItemListStart
+  \resumeItem{\textbf{Languages}{: \textbf{Python}, \textbf{JavaScript}, \textbf{TypeScript}, \textbf{Java}, \textbf{C/C++}, \textbf{SQL}, \textbf{Go}, \textbf{Bash}}}
+  \resumeItem{\textbf{Frameworks}{: \textbf{React}, \textbf{\textbf{React} Native}, \textbf{Next.js}, \textbf{Express.js}, \textbf{Node.js}, Flask, \textbf{FastAPI}, \textbf{Tailwind}, \textbf{SpringBoot}, \textbf{Pandas}}}
+  \resumeItem{\textbf{Databases \& Cloud}{: \textbf{MongoDB}, \textbf{PostgreSQL}, \textbf{Firebase}, \textbf{Supabase}, \textbf{\textbf{Google Cloud Platform} (\textbf{GCP})}}}
+  \resumeItem{\textbf{Other}{: \textbf{Git}/Github, \textbf{Figma}, \textbf{Docker}, VSCode, \textbf{Linux}, \textbf{\textbf{Expo} SDK}, \textbf{JUnit}, \textbf{Jest}}}
+\resumeItemListEnd
+
+\end{document}

@@ -1,0 +1,150 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez (Modified for Samuel Echefu)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\setlength{\footskip}{4pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for a fuller look
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.55in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - slightly more padding
+\titleformat{\section}{
+  \vspace{0pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabularx}{0.97\textwidth}{@{}Xr@{}}
+      \small#1 & #2 \\
+    \end{tabularx}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\bullet$, itemsep=1.80pt, topsep=2pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Samuel Echefu} \\ \vspace{3pt}
+    \small Systems Software Engineer $|$ Developer Tools \\ \vspace{3pt}
+    \small 587-500-7408 $|$ \href{mailto:samuel.n.echefu@gmail.com}{samuel.n.echefu@gmail.com} $|$ 
+    \href{https://linkedin.com/in/samuel-echefu-251a21336}{linkedin.com/in/samuel-echefu} $|$
+    \href{https://github.com/samnne}{github.com/samnne} $|$
+    \href{https://samechefu.com}{samechefu.com}
+\end{center}
+
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{University of Victoria (UVIC)}{Sep 2024 -- Apr 2028}{Bachelor of Science in Computer Science (3rd year)}{}
+\resumeItemListStart
+  \resumeItem{Relevant Coursework: Operating Systems, Data Structures and Algorithms, Software Systems Development, Software Development Methods}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeItemListStart
+  \resumeItem{\textbf{Languages}: \textbf{C/C++}, \textbf{Python}, \textbf{Go}, \textbf{Bash}, \textbf{Java}}
+  \resumeItem{\textbf{Systems}: \textbf{Linux}, \textbf{pthreads}, \textbf{FreeRTOS}, \textbf{SPI}, \textbf{asyncio}, \textbf{MCP}, \textbf{Make}}
+  \resumeItem{\textbf{Tools \& Testing}: \textbf{\textbf{Git}/\textbf{GitHub}}, \textbf{Docker}, \textbf{Locust}, \textbf{JUnit}, \textbf{Jest}}
+\resumeItemListEnd
+
+\section{Work Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Software Engineer}{Sep 2026 -- Present}{UVic Satellite Design}{Victoria, BC}
+\resumeItemListStart
+  \resumeItem{Soldered hardware components using a \textbf{Raspberry Pi} to relay \textbf{SPI} telemetry and video packets to a host PC}
+  \resumeItem{Built a high-speed \textbf{SPI} video pipeline between an \textbf{nRF5340}, a \textbf{Raspberry Pi}, and an output laptop using \textbf{FreeRTOS}, \textbf{Python}, and C functions to chunk frames and stream in real time}
+\resumeItemListEnd
+\resumeSubheading{Software Developer}{May 2026 -- Jul 2026}{Aeternum Corp}{Edmonton, AB}
+\resumeItemListStart
+  \resumeItem{Shipped an end-to-end permission-first RAG prototype with \textbf{FastAPI} and \textbf{TypeScript} ahead of the project deadline, with a \textit{90\%} confidence threshold to keep responses relevant and user data protected}
+  \resumeItem{Joined daily standups, managed work tickets, and scheduled work sessions with teammates to keep delivery on track}
+  \resumeItem{Created a dashboard \textbf{API} that batched metric requests, reduced network overhead, and cut latency by \textit{70\%}}
+  \resumeItem{Designed and ported a \textbf{Figma} prototype to a \textbf{\textbf{React} Native} mobile app to display data and responses}
+\resumeItemListEnd
+\resumeSubheading{Frontend Developer}{May 2025 -- Sep 2025}{ProperSeer}{Calgary, AB}
+\resumeItemListStart
+  \resumeItem{Created responsive user interfaces using \textbf{React}, \textbf{Redux}, and \textbf{Bootstrap}, enhancing cross-device usability and caching expensive operations through memoization and prefetching, improving overall page load time by \textit{20\%}}
+  \resumeItem{Developed dashboard views using \textbf{React} and \textbf{Redux}, streamlining property management workflows}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Selected Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Multi-Threaded Job Scheduler} $|$ \emph{C, pthreads, Linux, Make, Python}}{}
+\resumeItemListStart
+  \resumeItem{Built a multi-threaded scheduler in C with \textbf{pthreads} that simulates up to 256 concurrent threads, applying core OS concepts such as priority scheduling and mutual exclusion.}
+  \resumeItem{Designed a dispatcher with four FIFO queues (east/west, high/low priority), tie-breaking rules, and starvation prevention, so high-priority jobs go first without blocking the opposite direction.}
+  \resumeItem{Benchmarked with \textbf{Python} to compare expected output to ensure the scheduler rules are enforced.}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/ssi}{\textbf{Simple Shell Interpreter - Operating Systems Course}} $|$ \emph{C}}{}
+\resumeItemListStart
+  \resumeItem{Built a C shell that executes built-in commands and programs on PATH, using process-creation system calls and supporting background tasks.}
+  \resumeItem{Implemented persistent command history, \textbf{Git} support, and custom data structures to track background processes and user commands.}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/morph-ai}{\textbf{Morph}} $|$ \emph{Python, Textual, asyncio, MCP, OpenAI API}}{}
+\resumeItemListStart
+  \resumeItem{Built a terminal-based AI agent harness in \textbf{Python} with a \textbf{Textual} \textbf{TUI}, running agent requests and an agentic tool-calling loop over the \textbf{OpenAI Responses \textbf{API}}, formatting Markdown responses in a conversation view}
+  \resumeItem{Integrated \textbf{Model Context Protocol (\textbf{MCP})} servers over stdio, discovering external tools at startup and routing model tool calls alongside 5 local filesystem and command tools (8 tools total)}
+  \resumeItem{Added guardrails to command execution, including an executable allowlist, path-traversal rejection, 30-second timeouts, and output truncation to protect against prompt injection or malicious tool calls}
+  \resumeItem{Added persistent user memory loaded into the system prompt and runtime workspace switching through \textbf{TUI} tools}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\end{document}
