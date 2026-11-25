@@ -54,24 +54,24 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabularx}{0.97\textwidth}{@{}Xr@{}}
       \small#1 & #2 \\
-    \end{tabularx}\vspace{-5pt}
+    \end{tabularx}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\bullet$, itemsep=0pt, topsep=2pt, parsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\bullet$, itemsep=0pt, topsep=0pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -104,10 +104,10 @@
 \resumeSubHeadingListStart
 \resumeSubheading{Software Developer}{May 2026 -- Jul 2026}{Aeternum Corp}{Edmonton, AB}
 \resumeItemListStart
-  \resumeItem{Shipped an end-to-end permission-first RAG prototype with \textbf{FastAPI} and \textbf{TypeScript} ahead of the project deadline, with a \textit{90\%} confidence threshold to keep responses relevant and user data protected}
+  \resumeItem{Shipped an end-to-end permission-first RAG prototype with \textbf{FastAPI} and \textbf{TypeScript} ahead of the project deadline, with a \textbf{90\%} confidence threshold to keep responses relevant and user data protected}
   \resumeItem{Joined daily standups, managed work tickets, and scheduled work sessions with teammates to keep delivery on track}
-  \resumeItem{Created a dashboard \textbf{API} that batched metric requests, reduced network overhead, and cut latency by \textit{70\%}}
-  \resumeItem{Designed and ported a \textbf{Figma} prototype to a \textbf{\textbf{React} Native} mobile app to display data and responses}
+  \resumeItem{Created a dashboard \textbf{API} that batched metric requests, reduced network overhead, and cut latency by \textbf{70\%}}
+  \resumeItem{Designed and ported a \textbf{Figma} prototype to a \textbf{React Native} mobile app to display data and responses}
 \resumeItemListEnd
 \resumeSubheading{Software Engineer}{Sep 2026 -- Present}{UVic Satellite Design}{Victoria, BC}
 \resumeItemListStart
@@ -116,7 +116,7 @@
 \resumeItemListEnd
 \resumeSubheading{Frontend Developer}{May 2025 -- Sep 2025}{ProperSeer}{Calgary, AB}
 \resumeItemListStart
-  \resumeItem{Created responsive user interfaces using \textbf{React}, \textbf{Redux}, and \textbf{Bootstrap}, enhancing cross-device usability and caching expensive operations through memoization and prefetching, improving overall page load time by \textit{20\%}}
+  \resumeItem{Created responsive user interfaces using \textbf{React}, \textbf{Redux}, and \textbf{Bootstrap}, enhancing cross-device usability and caching expensive operations through memoization and prefetching, improving overall page load time by \textbf{20\%}}
   \resumeItem{Developed dashboard views using \textbf{React} and \textbf{Redux}, streamlining property management workflows}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
@@ -127,9 +127,9 @@
 \resumeProjectHeading{\href{https://github.com/samnne/marketquad}{\textbf{MarketQuad}} $|$ \emph{Next.js, Supabase, TypeScript, Cloudinary}}{}
 \resumeItemListStart
   \resumeItem{Launched a marketplace serving 20+ UVic students to buy \& sell local items (market-quad.com)}
-  \resumeItem{Load-tested with \textbf{Locust}, holding p95 $<$ 500 ms at \textit{1500+ req/s} on a \textbf{Next.js} \textbf{API}}
+  \resumeItem{Load-tested with \textbf{Locust}, holding $\textbf{p95} < \textbf{500 ms}$ at \textbf{1500+ req/s} on a \textbf{Next.js} \textbf{API}}
   \resumeItem{Developed secure authentication with \textbf{Supabase} and \textbf{Postgres RLS}, restricting access to ``@uvic.ca'' emails}
-  \resumeItem{Optimized image operations by utilizing \textbf{Cloudinary} CDN and prefetching to decrease listing load times by \textit{10\%}}
+  \resumeItem{Optimized image operations by utilizing \textbf{Cloudinary} CDN and prefetching to decrease listing load times by \textbf{10\%}}
   \resumeItem{Implemented a real-time messaging system using \textbf{Socket.io} for constant communication across devices}
 \resumeItemListEnd
 \resumeProjectHeading{\href{https://github.com/samnne/morph-ai}{\textbf{Morph}} $|$ \emph{Python, Textual, asyncio, MCP, OpenAI API}}{}
@@ -142,14 +142,14 @@
 \resumeProjectHeading{\href{https://github.com/samnne/utransit}{\textbf{uTransit}} $|$ \emph{Go, React Native, React, Data Handling, Protobuf, REST API}}{}
 \resumeItemListStart
   \resumeItem{Engineered a real-time data parser service in \textbf{Go} that consumes and fetches \textbf{BC Transit's GTFS Realtime} feed, decoding \textbf{Protobuf} messages into live vehicle positions and trip updates displayed in uTransit}
-  \resumeItem{Load-Tested with \textbf{Locust}, holding a p99 $<$ 320 ms with 1000 simulated users over 5 minutes}
-  \resumeItem{Reduced \textbf{API} latency from 650 ms to 45 ms by implementing an in-memory cache and indexing expensive calls}
-  \resumeItem{Designed and developed a mobile-first frontend in \textbf{\textbf{React} Native}, batching and memoizing network calls, improving round-trip response time by \textit{25\%}}
+  \resumeItem{Load-Tested with \textbf{Locust}, holding a $\textbf{p99} < \textbf{320 ms}$ with 1000 simulated users over 5 minutes}
+  \resumeItem{Reduced \textbf{API} latency from \textbf{650 ms} to \textbf{45 ms} by implementing an in-memory cache and indexing expensive calls}
+  \resumeItem{Designed and developed a mobile-first frontend in \textbf{React Native}, batching and memoizing network calls, improving round-trip response time by \textbf{25\%}}
 \resumeItemListEnd
 \resumeProjectHeading{\href{https://github.com/samnne/benny}{\textbf{Benny}} $|$ \emph{TypeScript, Expo, Java, Springboot, Google Cloud Platform}}{}
 \resumeItemListStart
-  \resumeItem{Automated expense tracking by building a receipt-parsing backend in \textbf{Spring Boot}, integrating the \textbf{Gemini \textbf{API}} to extract line items, structure, and classify expense types and common spending trends into \textbf{Firestore}}
-  \resumeItem{Built a \textbf{\textbf{React} Native} mobile application paired with an automated data pipeline in \textbf{TypeScript} to visualize expense metrics with \textbf{Tailwind} and use weighted averages to predict grocery totals before upcoming shopping trips}
+  \resumeItem{Automated expense tracking by building a receipt-parsing backend in \textbf{Spring Boot}, integrating the \textbf{Gemini API} to extract line items, structure, and classify expense types and common spending trends into \textbf{Firestore}}
+  \resumeItem{Built a \textbf{React Native} mobile application paired with an automated data pipeline in \textbf{TypeScript} to visualize expense metrics with \textbf{Tailwind} and use weighted averages to predict grocery totals before upcoming shopping trips}
 \resumeItemListEnd
 \resumeProjectHeading{\textbf{Multi-Threaded Job Scheduler} $|$ \emph{C, pthreads, Linux, Make, Python}}{}
 \resumeItemListStart
@@ -159,9 +159,9 @@
 \resumeItemListEnd
 \resumeProjectHeading{\href{https://github.com/samnne/u-eyes}{\textbf{uEyes}} $|$ \emph{React, TypeScript, FastAPI, Firebase, Google Cloud Platform, Docker}}{}
 \resumeItemListStart
-  \resumeItem{Designed a computer vision application for \textbf{Google AI Studio}'s hackathon which utilizes the \textbf{Gemini \textbf{API}} to describe a user's environment with audio in 500ms by maintaining short context windows for faster responses}
+  \resumeItem{Designed a computer vision application for \textbf{Google AI Studio}'s hackathon which utilizes the \textbf{Gemini API} to describe a user's environment with audio in \textbf{500ms} by maintaining short context windows for faster responses}
   \resumeItem{Developed using \textbf{WebSockets} for a real-time connection, \textbf{FastAPI}, \textbf{Firebase}, \textbf{Python}, \textbf{React}, and \textbf{Tailwind}}
-  \resumeItem{Containerized the backend with \textbf{Docker} and deployed to \textbf{\textbf{Google Cloud Platform} (\textbf{GCP})} for scalable hosting}
+  \resumeItem{Containerized the backend with \textbf{Docker} and deployed to \textbf{Google Cloud Platform (GCP)} for scalable hosting}
 \resumeItemListEnd
 \resumeProjectHeading{\href{https://github.com/samnne/ssi}{\textbf{Simple Shell Interpreter - Operating Systems Course}} $|$ \emph{C}}{}
 \resumeItemListStart
@@ -200,9 +200,9 @@
 \section{Skills}
 \resumeItemListStart
   \resumeItem{\textbf{Languages}{: \textbf{Python}, \textbf{JavaScript}, \textbf{TypeScript}, \textbf{Java}, \textbf{C/C++}, \textbf{SQL}, \textbf{Go}, \textbf{Bash}}}
-  \resumeItem{\textbf{Frameworks}{: \textbf{React}, \textbf{\textbf{React} Native}, \textbf{Next.js}, \textbf{Express.js}, \textbf{Node.js}, Flask, \textbf{FastAPI}, \textbf{Tailwind}, \textbf{SpringBoot}, \textbf{Pandas}}}
-  \resumeItem{\textbf{Databases \& Cloud}{: \textbf{MongoDB}, \textbf{PostgreSQL}, \textbf{Firebase}, \textbf{Supabase}, \textbf{\textbf{Google Cloud Platform} (\textbf{GCP})}}}
-  \resumeItem{\textbf{Other}{: \textbf{Git}/Github, \textbf{Figma}, \textbf{Docker}, VSCode, \textbf{Linux}, \textbf{\textbf{Expo} SDK}, \textbf{JUnit}, \textbf{Jest}}}
+  \resumeItem{\textbf{Frameworks}{: \textbf{React}, \textbf{React Native}, \textbf{Next.js}, \textbf{Express.js}, \textbf{Node.js}, Flask, \textbf{FastAPI}, \textbf{Tailwind}, \textbf{SpringBoot}, \textbf{Pandas}}}
+  \resumeItem{\textbf{Databases \& Cloud}{: \textbf{MongoDB}, \textbf{PostgreSQL}, \textbf{Firebase}, \textbf{Supabase}, \textbf{Google Cloud Platform (GCP)}}}
+  \resumeItem{\textbf{Other}{: \textbf{Git}/Github, \textbf{Figma}, \textbf{Docker}, VSCode, \textbf{Linux}, \textbf{Expo SDK}, \textbf{JUnit}, \textbf{Jest}}}
 \resumeItemListEnd
 
 \end{document}

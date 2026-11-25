@@ -49,7 +49,7 @@ work = {
 projects = {
     'MarketQuad': [
         'Launched a \\textbf{Next.js} marketplace serving 20+ UVic students; implemented \\textbf{Supabase} authentication and \\textbf{PostgreSQL} row-level security with @uvic.ca email restrictions.',
-        'Load-tested the \\textbf{Next.js} \\textbf{API} with \\textbf{Locust}, sustaining p95 < 500 ms at 1500+ requests/second.',
+        'Load-tested the \\textbf{Next.js} \\textbf{API} with \\textbf{Locust}, sustaining \textbf{p95} $<$ \textbf{500 ms} at 1500+ requests/second.',
         'Added \\textbf{Socket.io} messaging and \\textbf{Cloudinary} CDN delivery; image prefetching reduced listing load times by 10%.',
     ],
     'Morph': [
@@ -59,7 +59,7 @@ projects = {
     ],
     'uTransit': [
         "Built a Go service to decode BC Transit's GTFS Realtime Protobuf feed into live vehicle positions and trip updates for a React Native app.",
-        'Reduced API latency from 650 ms to 45 ms with in-memory caching and indexed lookups; recorded p99 < 320 ms with 1000 simulated users over 5 minutes in Locust.',
+        'Reduced API latency from \\textbf{650 ms} to \\textbf{45 ms} with in-memory caching and indexed lookups; recorded \\textbf{p99} $<$ \\textbf{320 ms} with 1000 simulated users over 5 minutes in Locust.',
         'Batched and memoized mobile network calls to improve round-trip response time by 25%.',
     ],
     'Benny': [
@@ -71,7 +71,7 @@ projects = {
         'Implemented four FIFO queues with directional and priority tie-breaking rules and starvation prevention; checked scheduling output against expectations using Python.',
     ],
     'uEyes': [
-        "Built a Gemini-powered computer vision app for Google AI Studio's hackathon, describing a user's environment with audio in 500 ms using short context windows.",
+        "Built a Gemini-powered computer vision app for Google AI Studio's hackathon, describing a user's environment with audio in \\textbf{500 ms} using short context windows.",
         'Used WebSockets, FastAPI, Firebase, React, and Tailwind for real-time interaction; containerized the backend with Docker and deployed it to Google Cloud Platform.',
     ],
     'Simple Shell Interpreter - Operating Systems Course': [
@@ -79,7 +79,7 @@ projects = {
         'Implemented persistent command history, Git support, and custom data structures to track background processes and user commands.',
     ],
     'VST Fingers': [
-        'Built a computer vision VST controller with Python, OpenCV, MediaPipe, and OSC messaging, mapping finger detection to controls inside Max9 in 50 ms.',
+        'Built a computer vision VST controller with Python, OpenCV, MediaPipe, and OSC messaging, mapping finger detection to controls inside Max9 in \\textbf{50 ms}.',
         'Co-authored a research paper on a computer vision music system that maps real-time finger detection to VSTs.',
     ],
     'Alert Me': [
@@ -123,7 +123,7 @@ roles = [
         'work': {
             'aeternum': [
                 'Shipped a permission-first RAG prototype using \\textbf{FastAPI} and \\textbf{TypeScript} ahead of deadline, applying a 90% confidence threshold to response generation.',
-                'Translated a \\textbf{Figma} prototype into a \\textbf{\\textbf{React} Native} client to display data and responses; built a batched dashboard \\textbf{API} that cut latency by 70%.',
+                'Translated a \\textbf{Figma} prototype into a \\textbf{React Native} client to display data and responses; built a batched dashboard \\textbf{API} that cut latency by 70%.',
             ],
         },
         'projects': ['Morph', 'Benny', 'uEyes'],
@@ -189,7 +189,7 @@ roles = [
         ],
         'work': {
             'aeternum': [
-                'Designed and ported a \\textbf{Figma} prototype into a \\textbf{\\textbf{React} Native} mobile client to display data and responses.',
+                'Designed and ported a \\textbf{Figma} prototype into a \\textbf{React Native} mobile client to display data and responses.',
                 'Built a dashboard \\textbf{API} that batched metric requests and reduced latency by 70%; delivered a \\textbf{FastAPI} and \\textbf{TypeScript} RAG prototype ahead of deadline.',
             ],
             'properseer': [
@@ -203,7 +203,7 @@ roles = [
                 'Added real-time \\textbf{Socket.io} messaging and optimized \\textbf{Cloudinary} image delivery with CDN use and prefetching, reducing listing load times by 10%.',
             ],
             'uTransit': [
-                'Built a mobile-first \\textbf{\\textbf{React} Native} interface for live transit positions and trip updates backed by a \\textbf{Go} GTFS Realtime parser.',
+                'Built a mobile-first \\textbf{React Native} interface for live transit positions and trip updates backed by a \\textbf{Go} GTFS Realtime parser.',
                 'Batched and memoized network calls to improve round-trip response time by 25%.',
             ],
         },
@@ -236,7 +236,7 @@ roles = [
         'project_bullets': {
             'uEyes': [
                 'Containerized a \\textbf{FastAPI} backend with \\textbf{Docker} and deployed it to \\textbf{Google Cloud Platform} for a real-time computer vision application.',
-                'Connected \\textbf{React} clients through \\textbf{WebSockets} and \\textbf{Firebase}; used the \\textbf{Gemini \\textbf{API}} and short context windows to deliver environment descriptions with audio in 500 ms.',
+                'Connected \\textbf{React} clients through \\textbf{WebSockets} and \\textbf{Firebase}; used the \\textbf{Gemini API} and short context windows to deliver environment descriptions with audio in \textbf{500 ms}.',
             ],
             'Morph': [
                 'Integrated \\textbf{MCP} servers over stdio with startup tool discovery and routing alongside local filesystem and command tools (8 tools total).',
@@ -268,10 +268,13 @@ for role in roles:
     chunks = [start, '\\section{Education}\n\\resumeSubHeadingListStart\n',
               r'\resumeSubheading{University of Victoria (UVIC)}{Sep 2024 -- Apr 2028}{Bachelor of Science in Computer Science (3rd year)}{}' + '\n',
               bullets(['Relevant Coursework: ' + role['courses']]),
-              '\\resumeSubHeadingListEnd\n\n\\section{Technical Skills}\n\\resumeItemListStart\n']
+              '\\resumeSubHeadingListEnd\n\n\\section{Technical Skills}\n',
+              ' \\begin{itemize}[leftmargin=0.15in, label={}]\n    \\small{\\item{\n']
+    skill_lines = []
     for label, value in role['skills']:
-        chunks.append('  \\resumeItem{\\textbf{' + tex(label) + '}: ' + tex(value) + '}\n')
-    chunks.append('\\resumeItemListEnd\n\n\\section{Work Experience}\n\\resumeSubHeadingListStart\n')
+        skill_lines.append('     \\textbf{' + tex(label) + '}{: ' + tex(value) + '}')
+    chunks.append(' \\\\ \\vspace{0pt}\n'.join(skill_lines))
+    chunks.append('\n    }}\n \\end{itemize}\n\n\\section{Work Experience}\n\\resumeSubHeadingListStart\n')
     for key in ['satellite', 'aeternum', 'properseer']:
         chunks.append(experience_chunks[key])
     chunks.append('\\resumeSubHeadingListEnd\n\n\\section{Selected Projects}\n\\resumeSubHeadingListStart\n')
@@ -354,13 +357,25 @@ if compiler and shutil.which('pdftotext'):
                 content, bottom = candidate, trial_bottom
         # Modest bullet spacing uses the last small gap without shrinking fonts.
         base_content = content
-        for step in range(1, 13):
+        for step in range(-8, 13):
             itemsep = step * 0.15
             candidate = base_content.replace('itemsep=0pt', f'itemsep={itemsep:.2f}pt')
             trial_pages, trial_bottom = compile_draft(path, candidate)
             if trial_pages != 1 or trial_bottom > 742:
-                break
-            content, bottom = candidate, trial_bottom
+                continue
+            if trial_bottom >= bottom or step == 0:
+                content, bottom = candidate, trial_bottom
+        # Back off extra projects if still overflowing the text area.
+        while bottom > 742 and len(selected) > len(role['projects']):
+            drop = selected.pop()
+            pattern = r'\\resumeProjectHeading[^\n]+\n\\resumeItemListStart\n.*?\\resumeItemListEnd\n?'
+            blocks = list(re.finditer(pattern, content, re.S))
+            for m in reversed(blocks):
+                found = re.search(r'\\textbf\{([^}]+)\}', m.group(0))
+                if found and found.group(1) == drop:
+                    content = content[:m.start()] + content[m.end():]
+                    break
+            pages, bottom = compile_draft(path, content)
         compile_draft(path, content)
         compile_draft(path, content)  # Resolve hyperlink outlines after final pagination.
         log = path.with_suffix('.log').read_text()

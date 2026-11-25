@@ -55,24 +55,24 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabularx}{0.97\textwidth}{@{}Xr@{}}
       \small#1 & #2 \\
-    \end{tabularx}\vspace{-5pt}
+    \end{tabularx}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\bullet$, itemsep=1.80pt, topsep=2pt, parsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\bullet$, itemsep=1.80pt, topsep=0pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -99,11 +99,13 @@
 \resumeSubHeadingListEnd
 
 \section{Technical Skills}
-\resumeItemListStart
-  \resumeItem{\textbf{Languages}: \textbf{Python}, \textbf{TypeScript}, \textbf{JavaScript}, \textbf{Java}, \textbf{SQL}}
-  \resumeItem{\textbf{AI \& Applications}: \textbf{OpenAI \textbf{API}}, \textbf{Gemini \textbf{API}}, \textbf{MCP}, RAG, \textbf{FastAPI}, \textbf{Textual}, \textbf{asyncio}, \textbf{\textbf{React} Native}, \textbf{Spring Boot}}
-  \resumeItem{\textbf{Data \& Tools}: \textbf{Firebase}, \textbf{Firestore}, \textbf{PostgreSQL}, \textbf{Docker}, \textbf{Google Cloud Platform}, \textbf{\textbf{Git}/\textbf{GitHub}}}
-\resumeItemListEnd
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, TypeScript, JavaScript, Java, SQL} \\ \vspace{0pt}
+     \textbf{AI \& Applications}{: OpenAI API, Gemini API, MCP, RAG, FastAPI, Textual, asyncio, React Native, Spring Boot} \\ \vspace{0pt}
+     \textbf{Data \& Tools}{: Firebase, Firestore, PostgreSQL, Docker, Google Cloud Platform, Git/GitHub}
+    }}
+ \end{itemize}
 
 \section{Work Experience}
 \resumeSubHeadingListStart
@@ -114,14 +116,14 @@
 \resumeItemListEnd
 \resumeSubheading{Software Developer}{May 2026 -- Jul 2026}{Aeternum Corp}{Edmonton, AB}
 \resumeItemListStart
-  \resumeItem{Shipped an end-to-end permission-first RAG prototype with \textbf{FastAPI} and \textbf{TypeScript} ahead of the project deadline, with a \textit{90\%} confidence threshold to keep responses relevant and user data protected}
+  \resumeItem{Shipped an end-to-end permission-first RAG prototype with \textbf{FastAPI} and \textbf{TypeScript} ahead of the project deadline, with a \textbf{90\%} confidence threshold to keep responses relevant and user data protected}
   \resumeItem{Joined daily standups, managed work tickets, and scheduled work sessions with teammates to keep delivery on track}
-  \resumeItem{Created a dashboard \textbf{API} that batched metric requests, reduced network overhead, and cut latency by \textit{70\%}}
-  \resumeItem{Designed and ported a \textbf{Figma} prototype to a \textbf{\textbf{React} Native} mobile app to display data and responses}
+  \resumeItem{Created a dashboard \textbf{API} that batched metric requests, reduced network overhead, and cut latency by \textbf{70\%}}
+  \resumeItem{Designed and ported a \textbf{Figma} prototype to a \textbf{React Native} mobile app to display data and responses}
 \resumeItemListEnd
 \resumeSubheading{Frontend Developer}{May 2025 -- Sep 2025}{ProperSeer}{Calgary, AB}
 \resumeItemListStart
-  \resumeItem{Created responsive user interfaces using \textbf{React}, \textbf{Redux}, and \textbf{Bootstrap}, enhancing cross-device usability and caching expensive operations through memoization and prefetching, improving overall page load time by \textit{20\%}}
+  \resumeItem{Created responsive user interfaces using \textbf{React}, \textbf{Redux}, and \textbf{Bootstrap}, enhancing cross-device usability and caching expensive operations through memoization and prefetching, improving overall page load time by \textbf{20\%}}
   \resumeItem{Developed dashboard views using \textbf{React} and \textbf{Redux}, streamlining property management workflows}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
@@ -137,13 +139,18 @@
 \resumeItemListEnd
 \resumeProjectHeading{\href{https://github.com/samnne/benny}{\textbf{Benny}} $|$ \emph{TypeScript, Expo, Java, Springboot, Google Cloud Platform}}{}
 \resumeItemListStart
-  \resumeItem{Automated expense tracking by building a receipt-parsing backend in \textbf{Spring Boot}, integrating the \textbf{Gemini \textbf{API}} to extract line items, structure, and classify expense types and common spending trends into \textbf{Firestore}}
-  \resumeItem{Built a \textbf{\textbf{React} Native} mobile application paired with an automated data pipeline in \textbf{TypeScript} to visualize expense metrics with \textbf{Tailwind} and use weighted averages to predict grocery totals before upcoming shopping trips}
+  \resumeItem{Automated expense tracking by building a receipt-parsing backend in \textbf{Spring Boot}, integrating the \textbf{Gemini API} to extract line items, structure, and classify expense types and common spending trends into \textbf{Firestore}}
+  \resumeItem{Built a \textbf{React Native} mobile application paired with an automated data pipeline in \textbf{TypeScript} to visualize expense metrics with \textbf{Tailwind} and use weighted averages to predict grocery totals before upcoming shopping trips}
 \resumeItemListEnd
 \resumeProjectHeading{\href{https://github.com/samnne/u-eyes}{\textbf{uEyes}} $|$ \emph{React, TypeScript, FastAPI, Firebase, Google Cloud Platform, Docker}}{}
 \resumeItemListStart
-  \resumeItem{Built a Gemini-powered computer vision app for \textbf{Google AI Studio}'s hackathon, describing a user's environment with audio in 500 ms using short context windows.}
-  \resumeItem{Used \textbf{WebSockets}, \textbf{FastAPI}, \textbf{Firebase}, \textbf{React}, and \textbf{Tailwind} for real-time interaction; containerized the backend with \textbf{Docker} and deployed it to \textbf{Google Cloud Platform}.}
+  \resumeItem{Built a Gemini-powered computer vision app for Google AI Studio's hackathon, describing a user's environment with audio in \textbf{500 ms} using short context windows.}
+  \resumeItem{Used WebSockets, FastAPI, Firebase, React, and Tailwind for real-time interaction; containerized the backend with Docker and deployed it to Google Cloud Platform.}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/vst-fingers}{\textbf{VST Fingers}} $|$ \emph{OpenCV, Python, Max9, MediaPipe}}{}
+\resumeItemListStart
+  \resumeItem{Built a VST computer vision controller using \textbf{Python}, \textbf{OpenCV} and \textbf{MediaPipe}, and OSC messaging, enabling finger detection to control VSTs inside \textbf{Max9} in 50ms}
+  \resumeItem{Co-authored a research paper on a computer vision music system that maps real-time finger detection to VSTs}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.11.25)  25 NOV 2026 12:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.11.25)  25 NOV 2026 12:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -436,11 +436,11 @@ Package rerunfilecheck Info: File `Samuel_Echefu_Embedded_Firmware_Engineer.out
 Here is how much of TeX's memory you used:
  11567 strings out of 469515
  179037 string characters out of 5470806
- 635553 words of memory out of 5000000
+ 638553 words of memory out of 5000000
  40085 multiletter control sequences out of 15000+600000
  633196 words of font info for 62 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,11n,79p,301b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,339b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -449,11 +449,11 @@ cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/
 share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmti9.pfb>
-Output written on Samuel_Echefu_Embedded_Firmware_Engineer.pdf (1 page, 125486 
+Output written on Samuel_Echefu_Embedded_Firmware_Engineer.pdf (1 page, 129269 
 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  6 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -55,24 +55,24 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabularx}{0.97\textwidth}{@{}Xr@{}}
       \small#1 & #2 \\
-    \end{tabularx}\vspace{-5pt}
+    \end{tabularx}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\bullet$, itemsep=1.05pt, topsep=2pt, parsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\bullet$, itemsep=1.20pt, topsep=0pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -99,11 +99,13 @@
 \resumeSubHeadingListEnd
 
 \section{Technical Skills}
-\resumeItemListStart
-  \resumeItem{\textbf{Languages}: \textbf{Python}, \textbf{Go}, \textbf{Bash}, \textbf{TypeScript}, \textbf{SQL}}
-  \resumeItem{\textbf{Cloud \& Runtime}: \textbf{Docker}, \textbf{Google Cloud Platform}, \textbf{Linux}, \textbf{\textbf{Git}/\textbf{GitHub}}, \textbf{asyncio}, \textbf{MCP}}
-  \resumeItem{\textbf{Services \& Testing}: \textbf{FastAPI}, \textbf{REST APIs}, \textbf{Protobuf}, \textbf{Locust}, \textbf{PostgreSQL}, \textbf{Firebase}}
-\resumeItemListEnd
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Go, Bash, TypeScript, SQL} \\ \vspace{0pt}
+     \textbf{Cloud \& Runtime}{: Docker, Google Cloud Platform, Linux, Git/GitHub, asyncio, MCP} \\ \vspace{0pt}
+     \textbf{Services \& Testing}{: FastAPI, REST APIs, Protobuf, Locust, PostgreSQL, Firebase}
+    }}
+ \end{itemize}
 
 \section{Work Experience}
 \resumeSubHeadingListStart
@@ -114,14 +116,14 @@
 \resumeItemListEnd
 \resumeSubheading{Software Developer}{May 2026 -- Jul 2026}{Aeternum Corp}{Edmonton, AB}
 \resumeItemListStart
-  \resumeItem{Shipped an end-to-end permission-first RAG prototype with \textbf{FastAPI} and \textbf{TypeScript} ahead of the project deadline, with a \textit{90\%} confidence threshold to keep responses relevant and user data protected}
+  \resumeItem{Shipped an end-to-end permission-first RAG prototype with \textbf{FastAPI} and \textbf{TypeScript} ahead of the project deadline, with a \textbf{90\%} confidence threshold to keep responses relevant and user data protected}
   \resumeItem{Joined daily standups, managed work tickets, and scheduled work sessions with teammates to keep delivery on track}
-  \resumeItem{Created a dashboard \textbf{API} that batched metric requests, reduced network overhead, and cut latency by \textit{70\%}}
-  \resumeItem{Designed and ported a \textbf{Figma} prototype to a \textbf{\textbf{React} Native} mobile app to display data and responses}
+  \resumeItem{Created a dashboard \textbf{API} that batched metric requests, reduced network overhead, and cut latency by \textbf{70\%}}
+  \resumeItem{Designed and ported a \textbf{Figma} prototype to a \textbf{React Native} mobile app to display data and responses}
 \resumeItemListEnd
 \resumeSubheading{Frontend Developer}{May 2025 -- Sep 2025}{ProperSeer}{Calgary, AB}
 \resumeItemListStart
-  \resumeItem{Created responsive user interfaces using \textbf{React}, \textbf{Redux}, and \textbf{Bootstrap}, enhancing cross-device usability and caching expensive operations through memoization and prefetching, improving overall page load time by \textit{20\%}}
+  \resumeItem{Created responsive user interfaces using \textbf{React}, \textbf{Redux}, and \textbf{Bootstrap}, enhancing cross-device usability and caching expensive operations through memoization and prefetching, improving overall page load time by \textbf{20\%}}
   \resumeItem{Developed dashboard views using \textbf{React} and \textbf{Redux}, streamlining property management workflows}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
@@ -131,21 +133,24 @@
 \resumeProjectHeading{\href{https://github.com/samnne/u-eyes}{\textbf{uEyes}} $|$ \emph{React, TypeScript, FastAPI, Firebase, Google Cloud Platform, Docker}}{}
 \resumeItemListStart
   \resumeItem{Containerized a \textbf{FastAPI} backend with \textbf{Docker} and deployed it to \textbf{Google Cloud Platform} for a real-time computer vision application.}
-  \resumeItem{Connected \textbf{React} clients through \textbf{WebSockets} and \textbf{Firebase}; used the \textbf{Gemini \textbf{API}} and short context windows to deliver environment descriptions with audio in 500 ms.}
+  \resumeItem{Connected \textbf{React} clients through \textbf{WebSockets} and \textbf{Firebase}; used the \textbf{Gemini API} and short context windows to deliver environment descriptions with audio in 	extbf{500 ms}.}
 \resumeItemListEnd
 \resumeProjectHeading{\href{https://github.com/samnne/utransit}{\textbf{uTransit}} $|$ \emph{Go, React Native, React, Data Handling, Protobuf, REST API}}{}
 \resumeItemListStart
-  \resumeItem{Engineered a real-time data parser service in \textbf{Go} that consumes and fetches \textbf{BC Transit's GTFS Realtime} feed, decoding \textbf{Protobuf} messages into live vehicle positions and trip updates displayed in uTransit}
-  \resumeItem{Load-Tested with \textbf{Locust}, holding a p99 $<$ 320 ms with 1000 simulated users over 5 minutes}
-  \resumeItem{Reduced \textbf{API} latency from 650 ms to 45 ms by implementing an in-memory cache and indexing expensive calls}
-  \resumeItem{Designed and developed a mobile-first frontend in \textbf{\textbf{React} Native}, batching and memoizing network calls, improving round-trip response time by \textit{25\%}}
+  \resumeItem{Built a Go service to decode BC Transit's GTFS Realtime Protobuf feed into live vehicle positions and trip updates for a React Native app.}
+  \resumeItem{Reduced API latency from \textbf{650 ms} to \textbf{45 ms} with in-memory caching and indexed lookups; recorded \textbf{p99} $$<$$ \textbf{320 ms} with 1000 simulated users over 5 minutes in Locust.}
+  \resumeItem{Batched and memoized mobile network calls to improve round-trip response time by 25\%.}
 \resumeItemListEnd
 \resumeProjectHeading{\href{https://github.com/samnne/morph-ai}{\textbf{Morph}} $|$ \emph{Python, Textual, asyncio, MCP, OpenAI API}}{}
 \resumeItemListStart
-  \resumeItem{Built a terminal-based AI agent harness in \textbf{Python} with a \textbf{Textual} \textbf{TUI}, running agent requests and an agentic tool-calling loop over the \textbf{OpenAI Responses \textbf{API}}, formatting Markdown responses in a conversation view}
-  \resumeItem{Integrated \textbf{Model Context Protocol (\textbf{MCP})} servers over stdio, discovering external tools at startup and routing model tool calls alongside 5 local filesystem and command tools (8 tools total)}
-  \resumeItem{Added guardrails to command execution, including an executable allowlist, path-traversal rejection, 30-second timeouts, and output truncation to protect against prompt injection or malicious tool calls}
-  \resumeItem{Added persistent user memory loaded into the system prompt and runtime workspace switching through \textbf{TUI} tools}
+  \resumeItem{Integrated \textbf{MCP} servers over stdio with startup tool discovery and routing alongside local filesystem and command tools (8 tools total).}
+  \resumeItem{Applied executable allowlisting, path-traversal rejection, 30-second command timeouts, and output truncation; added runtime workspace switching.}
+\resumeItemListEnd
+\resumeProjectHeading{\href{https://github.com/samnne/ssi}{\textbf{Simple Shell Interpreter - Operating Systems Course}} $|$ \emph{C}}{}
+\resumeItemListStart
+  \resumeItem{Built a shell interpreter in C that executes built-in commands and any program on the user's PATH, including support for background tasks, using system calls for process creation}
+  \resumeItem{Implemented persistent command history stored across sessions, plus git support}
+  \resumeItem{Developed custom data structures to handle background processes and store user commands for efficiency}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 \end{document}
